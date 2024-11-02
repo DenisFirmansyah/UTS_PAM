@@ -31,10 +31,14 @@ class ListFoodActivity : AppCompatActivity() {
 
         // Menyiapkan data makanan
         foodList = listOf(
-            Food("Batagor", "Batagor asli enak dari Bandung", R.drawable.batagor),
-            Food("Black Salad", "Salad segar yang dibuat secara langsung", R.drawable.black_salad),
-            Food("Cappucino", "Kopi cappucino asli yang dibuat dari Kopi Arabica", R.drawable.cappuchino),
-            Food("ES Doger", "Es dengan campuran", R.drawable.es_doger)
+            Food("Batagor", "Rp 5.000", R.drawable.batagor),
+            Food("Black Salad", "Rp 12.000", R.drawable.black_salad),
+            Food("Cappucino", "Rp 6.000", R.drawable.cappuchino),
+            Food("ES Doger", "Rp 7.000", R.drawable.es_doger),
+            Food("Mie Kocok", "Rp 10.000", R.drawable.mie_kocok),
+            Food("Seblak Aneka Ragam", "Rp 5.000", R.drawable.seblak),
+            Food("Basreng", "Rp 5.000", R.drawable.basreng),
+            Food("Es Kelapa", "Rp 6.000", R.drawable.es_kelapa)
         )
 
         adapter = FoodAdapter(foodList, this::OnFoodItemClick)
